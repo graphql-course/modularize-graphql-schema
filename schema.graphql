@@ -1,0 +1,22 @@
+type Query {
+  hello: String!
+  helloWithName(name: String!): String!
+  helloToGraphQLCourse: String!
+  users: [User]
+  message: Message
+}
+
+type Message {
+  id: ID!
+  text: String
+}
+
+type User {
+  id: ID!
+  name: String
+  lastname: String!
+}
+
+schema {
+  query: Query
+}
